@@ -4,13 +4,17 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
         <h1>Página de usuarios</h1>
         <div>
+            <div>
+                <asp:Label ID = "mostrarMensaje" runat ="server"></asp:Label>
+            </div>
+
             <p>
                 NIF: <asp:TextBox ID="NIFTextBox" TextMode="SingleLine" 
-                    Columns="9" runat="server" /> 
+                    Columns="9" runat="server"  /> 
             </p>
             <p>
                 Nombre: <asp:TextBox ID="NombreTextBox" TextMode="SingleLine" 
-                    Columns="30" runat="server" /> 
+                    Columns="30" runat="server"  /> 
             </p>
             <p>
                 Edad: <asp:TextBox ID="EdadTextBox" TextMode="SingleLine" 
@@ -25,6 +29,6 @@
             <asp:Button ID="BotonActualizar" Text="Actualizar" runat="server" OnClick="Actualizar" />
             <asp:Button ID="BotonBorrarUsuario" Text="Borrar" runat="server" OnClick="BorrarUsuario" />
 
-
         </div>
+
 </asp:Content>
